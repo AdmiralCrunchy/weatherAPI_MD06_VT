@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Weather API</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>    
+    </header>
+
+    <main class ='row'>
+        
+        <div id="searchsection" class="col s12 m12 l4">
+            <nav>
+                <div class="nav-wrapper">
+                    <form id="searchForm">
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Seattle" required>
+                            <label class="label-icon" for="search">
+                            <i class="material-icons">search</i>
+                            </label>
+                            <i class="material-icons">close</i>
+                            <button id="searchInput" class="hidden"></button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <form class="radio" action="#">
+                <p id="title">Unit of Measurement</p>
+                <p>
+                    <label>
+                        <input onclick="checkUnit(1)" name="measure" class="with-gap" type="radio" checked/>
+                        <span>Metric</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input onclick="checkUnit(2)" name="measure" class="with-gap" type="radio"/>
+                        <span>Imperial</span>
+                    </label>
+                </p>
+            </form>
+        </div>
+
+        <div class="col s12 m12 l8">
+            <section id="currentReport">
+                <h3 id="city"></h3>
+                <img id="currentIcon" src="" alt="">
+                <div class = "detail" id="currentTemp"></div>
+                <div class = "detail" id="currentHumid"></div>
+                <div class = "detail" id="currentWind"></div>
+                <div class = "detail" id="currentUV"></div>
+                <div class = "detail" id="symbolUV"> </div>
+            </section>
+            <section>
+                <h3>The 5 Day Forecast</h3>
+                <div class="row center" id="totalForecast"></div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <h5>Site created by Vincent 'Kaylin' Tate</h5>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </footer>
+
+</body>
+
+
+</html>

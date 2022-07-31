@@ -1,0 +1,39 @@
+:root {
+    --primary: lightblue;
+    --secondary: darkred;
+    --text: white;
+}
+
+h1 {
+ background-color: var(--secondary);
+ text-align: center;
+ color: var(--text);
+}
+
+#searchsection{
+    background-color: var(--secondary);
+}
+
+nav {
+    margin-bottom: 30px;
+    background-color: var(--secondary);
+
+}
+
+.radio{
+    color: var(--text);
+}
+#title {
+    font-size: 125%;
+}
+#currentReport {
+    border: black solid 4px;
+}
+
+footer{
+    background-color: var(--secondary);
+    text-align: center;
+    color: var(--text);
+}
+
+

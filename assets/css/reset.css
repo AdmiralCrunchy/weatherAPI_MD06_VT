@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+ min-width: none;
+ min-height: 100%;
+ font-family: 'Times New Roman', Times, serif;
+}
+.hidden {
+    visibility: hidden;
+}
+
+p{
+    font-size: 80%;
+}
+
+ol {
+    list-style: none;
+}
