@@ -6,7 +6,7 @@ This was the 6th assignment module for the UW boot camp program that went over s
 
 Repository: https://github.com/AdmiralCrunchy/weatherAPI_MD06_VT
 
-URL:
+URL: https://admiralcrunchy.github.io/weatherAPI_MD06_VT/
 
 
 ## Screen Shots
